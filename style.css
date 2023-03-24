@@ -59,11 +59,13 @@ nav .isLogin {
     linear-gradient(rgba(0, 0, 0, 0.8), 
     rgba(0, 0, 0, 0.8)),
     url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: -20px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .textBanner {
@@ -98,28 +100,66 @@ nav .isLogin {
 
 .program {
     display: block;
-    margin-bottom: 50px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.8)),
+    url("https://i.postimg.cc/VsH7BdW7/martino-pietropoli-VSo5d9wl-T7s-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fafafa;
+    padding: 10px 20px 0 40px;
+    border-radius: 0 0 10px 10px;
 }
 
 .programKelas {
     width: 100%;
-    height: auto;
-    margin-bottom: 500px;
+    text-align: center;
+}
+
+.programKelas h1{
+    font-size: 32px;
 }
 
 .card {
-    width: 240px;
+    width: 250px;
+    height: auto;
     background-color: #fdfdfd;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    float: left;
+    margin: 0 12px;
+    border-radius: 10px;
 }
 
 .card img {
     width: fit-content;
     height: 150px;
-    object-fit: cover;    
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
-.card .container {
+.card .container-kelas {
     text-align: center;
+    color: #2a2a2a;
     padding-bottom: 10px;
+}
+
+.tentangKami {
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), 
+    rgba(0, 0, 0, 0.8)),
+    url("https://i.postimg.cc/VsH7BdW7/martino-pietropoli-VSo5d9wl-T7s-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;color: #fafafa;
+    padding: 40px;
+}
+
+section .container-tentangKami {
+    display: flex;
+    align-items: center;
+}
+
+.text-tentangKami h3 {
+    font-size: 48px;
+    font-weight: bold;
 }
