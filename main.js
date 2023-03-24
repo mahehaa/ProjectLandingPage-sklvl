@@ -24,16 +24,16 @@ let cardList = [
 function generateCards(data) {
    let cards = "";
 
-   data.forEach(function (item) {
+   data.forEach((item) => {
        cards += `
-       <div class="card">
-       <img src="${item.image}" alt="seniRupa" style="width:100%">
-          <div class="container-kelas">
-             <h4><b>${item.namaKelas}</b></h4> 
-             <p>${item.deskripsi}</p> 
-          </div>          
-    </div>
-   `;
+         <div class="card">
+            <img src="${item.image}" alt="seniRupa" style="width:100%">
+               <div class="container-kelas">
+                  <h4><b>${item.namaKelas}</b></h4> 
+               <p>${item.deskripsi}</p> 
+            </div>          
+         </div>
+      `;
    });
 
    return cards;
