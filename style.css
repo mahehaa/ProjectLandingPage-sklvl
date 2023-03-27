@@ -1,24 +1,41 @@
 * {
     font-family: 'Plus Jakarta Sans';
+    padding: 0;
+    margin: 0;
+    
 }
 
-body {
-    margin-left: 80px;
-    margin-right: 80px;
+.headingContent {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 25px 0;
+    background-image: 
+    linear-gradient(rgba(33, 33, 41, 0.9), 
+    rgba(33, 33, 41, 0.7)),
+    url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-nav {
+.headNav {
+    position: fixed;
+    top: 0;
+    height: 250px;
+    margin: 0 140px 0 140px;
     display: flex;
+    padding: 5px 10px 5px 10px;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    border-radius: 10px;
 }
 
 .logo img {
     width: 220px;
 }
 
-nav .menu {
+.headNav .menu {
     list-style-type: none;
     display: inline-flex;
     align-items: center;
@@ -26,8 +43,18 @@ nav .menu {
     margin: 0;
 }
 
-.menu li a {
-    color: #2a2a2a;
+.headNav .menu a:hover {
+    color: #fffffe;
+    font-weight: bold;
+}
+
+.headNav .menu .active {
+    color: #fffffe;
+    font-weight: bold;
+}
+
+.headNav .menu li a {
+    color: #cacaca;
     text-decoration: none;
     font-size: 18px;
     width: 120px;
@@ -35,7 +62,7 @@ nav .menu {
     margin-left: 40px;
 }
 
-nav .isLogin {
+.isLogin .user {
     list-style-type: none;
     display: inline-flex;
     align-items: center;
@@ -43,29 +70,50 @@ nav .isLogin {
     margin: 0;
 }
 
-.isLogin li a {
-    color: #2a2a2a;
+.user li a {
+    color: #cacaca;
     font-size: 18px;
     width: 120px;
     padding: 0;
     margin-left: 12px;
 }
 
+.user span {
+    color: #fafafa;
+}
+
+.isLogin .login {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.login li a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 18px;
+    width: 120px;
+    padding: 0;
+    margin: 8px;
+}
+
+.login .signIn a {
+    color: #e77a18;
+}
+
+.login span {
+    color: #fafafa;
+}
+
 .heroBanner {
     width: 100%;
     height: 500px;
-    margin-bottom: 50px;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.8), 
-    rgba(0, 0, 0, 0.8)),
-    url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -20px 0 20px 0;
+    margin: 40px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 
 .textBanner {
@@ -98,68 +146,192 @@ nav .isLogin {
     background-color: transparent;
 }
 
-.program {
-    display: block;
-    height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), 
-    rgba(0, 0, 0, 0.8)),
-    url("https://i.postimg.cc/VsH7BdW7/martino-pietropoli-VSo5d9wl-T7s-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Main Content */
+
+.mainContent {
+    margin-left: 140px;
+    margin-right: 140px;
+    background-color: #fffffe;
+}
+
+.mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainNav ul li {
+    margin-right: 20px;
+}
+
+
+
+
+
+.tentangKami-container {
+    background-color: #f9fafa;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.tentangKami {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #212129;
+    border-radius: 10px;
+}
+
+.text-tentangKami {
+    padding-right: 100px;
+}
+
+.text-tentangKami h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    color: #fffffe;
+}
+
+.text-tentangKami h3 span{
+    font-size: 32px;
+    font-weight: bold;
+    color: #e47d23;
+}
+
+.text-tentangKami p {
+    width: 430px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: #cacaca;
+}
+
+.text-tentangKami p span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #e47d23;
+}
+
+.containerIntro {
+    width: auto;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.textIntro h3 {
+    padding-bottom: 50px;
+    font-size: 40px;
+    color: #212129;
+}
+
+.ourProgram-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-ourProgram {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: fit-content;
+    padding: 20px;
+    margin: 0 25px 0 30px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-ourProgram img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* .content-ourProgram {
+    
+} */
+
+
+/* .program-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
     color: #fafafa;
-    padding: 10px 20px 0 40px;
     border-radius: 0 0 10px 10px;
 }
 
 .programKelas {
-    width: 100%;
     text-align: center;
+    display: block;
 }
 
-.programKelas h1{
-    font-size: 32px;
+.programKelas h3{
+    font-size: 40px;
+    padding-bottom: 25px;
 }
 
-.card {
-    width: 250px;
-    height: auto;
-    background-color: #fdfdfd;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.programKelas h3 span {
+    color: #e77a18; 
+}
+
+.cardClass {
+    width: 200px;
+    height: 300px;
     float: left;
-    margin: 0 12px;
+    margin: 0 14px;
     border-radius: 10px;
 }
 
-.card img {
+.cardClass img {
     width: fit-content;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
-.card .container-kelas {
+.cardClass img:hover {
+    width: fit-content;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1.5px 0 10px #fafafa    
+}
+
+.cardClass .body-card {
     text-align: center;
-    color: #2a2a2a;
+    color: #fafafa;
     padding-bottom: 10px;
 }
 
-.tentangKami {
-    border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 1), 
-    rgba(0, 0, 0, 0.8)),
-    url("https://i.postimg.cc/VsH7BdW7/martino-pietropoli-VSo5d9wl-T7s-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: cover;color: #fafafa;
-    padding: 40px;
+.cardClass .body-card-class p {
+    color: #cacaca;
 }
 
-section .container-tentangKami {
-    display: flex;
-    align-items: center;
+.cardClass .body-card-class a {
+    color: #cacaca;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.text-tentangKami h3 {
-    font-size: 48px;
+.cardClass .body-card-class a:hover {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
-}
+} */

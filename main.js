@@ -1,43 +1,57 @@
-let cardList = [
+let navbar = document.getElementsByClassName("menu");
+let btns = navbar[0].getElementsByClassName("btn");
+
+for (let i = 0; i < btns.length; i++) {
+   // console.log(btns[i])
+   btns[i].addEventListener("click", function () {
+      let current = document.getElementsByClassName("active")
+      // let data = current[0].className
+      current[0].className = current[0].className.replace(" active", "")
+      this.className += " active"
+   });
+}
+
+let cardListClass = [
    {
-      namaKelas : "Seni Rupa",
-      deskripsi : "deskripsi",
-      image : "https://i.postimg.cc/DZyhyMzZ/adrianna-geo-1r-Bg5-YSi00c-unsplash.jpg"
+      namaKelas : "Seni Rupa Kontemporer",
+      kategori : "seni rupa",
+      image : "https://i.postimg.cc/cHGCvdgh/steve-johnson-j-PT1h-VOhqb0-unsplash.jpg"
+   },
+   {
+      namaKelas : "Seni Rupa Millenium",
+      kategori : "seni rupa",
+      image : "https://i.postimg.cc/1zt4kWx0/fabrice-villard-Jrl-UQc-Zq-Oc-unsplash.jpg"
    },
    {
       namaKelas : "Seni Rupa",
-      deskripsi : "deskripsi",
-      image : "https://i.postimg.cc/DZyhyMzZ/adrianna-geo-1r-Bg5-YSi00c-unsplash.jpg"
+      kategori : "kategori",
+      image : "https://i.postimg.cc/ZKwSGJJg/simona-sergi-Ofj-Ouw-pr-Pg-unsplash.jpg"
    },
    {
       namaKelas : "Seni Rupa",
-      deskripsi : "deskripsi",
-      image : "https://i.postimg.cc/DZyhyMzZ/adrianna-geo-1r-Bg5-YSi00c-unsplash.jpg"
-   },
-   {
-      namaKelas : "Seni Rupa",
-      deskripsi : "deskripsi",
-      image : "https://i.postimg.cc/DZyhyMzZ/adrianna-geo-1r-Bg5-YSi00c-unsplash.jpg"
+      kategori : "kategori",
+      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
    },
 ]
 
-function generateCards(data) {
+function generateCardsClass(data) {
    let cards = "";
 
-   data.forEach((item) => {
+   data.forEach(item => {
        cards += `
-         <div class="card">
+         <div class="cardClass">
             <img src="${item.image}" alt="seniRupa" style="width:100%">
-               <div class="container-kelas">
+               <div class="body-card-class">
                   <h4><b>${item.namaKelas}</b></h4> 
-               <p>${item.deskripsi}</p> 
-            </div>          
+                  <p>${item.kategori}</p>
+                  <br>
+                  <a href="#">Cek Detail</a>
+               </div>          
          </div>
       `;
    });
-
    return cards;
 }
 
-let cardContainer = document.getElementById("card-container");
-cardContainer.innerHTML = generateCards(cardList);
+let cardContainerClass = document.getElementById("card-class-container");
+cardContainerClass.innerHTML = generateCardsClass(cardListClass);

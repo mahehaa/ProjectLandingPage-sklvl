@@ -7,60 +7,115 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     <title>Senikus</title>
-    <link rel="icon" href="https://i.postimg.cc/L4gBYg78/SENIKUSLOGO.webp">
+    <link rel="icon" href="https://i.postimg.cc/W4fx6kFn/logo-color-removebg-preview.png">
 </head>
 <body>
-    <!--Heading Nav-->
-    <section class="headingContent">
-        <nav>
+    <!--Heading-->
+    <section class="headingContent" id="headingContent">
+        <nav class="headNav" id="headNav">
             <div class="logo">
-                <img src="https://i.postimg.cc/L4gBYg78/SENIKUSLOGO.webp" width="100">
+                <img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100">
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a href="#" class="btn active">Home</a></li>
+                <li><a href="#" class="btn">Program</a></li>
+                <li><a href="#" class="btn">Tentang Kami</a></li>
+                <li><a href="#" class="btn">Kontak</a></li>
             </ul>    
             
-            <ul class="isLogin">
-                <span>|</span>
-                <li class="userName"><a href="#">Mahesa</a></li>
-                <li class="userAvatar"><a href="#"><img src="https://i.postimg.cc/bwcWHQHw/profile.png" width="50"></a></li>
-            </ul>
-        </nav>
-    </section>
-    <!--Heading Nav-->
+            <div class="isLogin">
+                <ul class="user" style="display: none;">
+                    <span>|</span>
+                    <li class="userName"><a href="#">Mahesa</a></li>
+                    <li class="userAvatar"><a href="#"><img src="https://i.postimg.cc/bwcWHQHw/profile.png" width="50"></a></li>
+                </ul>
     
-    <!--Hero Banner-->
-    <section class="heroBanner">
-        <div class="textBanner">
-            <h1>Raih Pengalamanmu Dengan Bergabung Di Program Kami</h1>
-            <p>Komunitas <span>-</span> Kelas</p>
-            <button id="hero-btn" style="border-radius: 10px;">Mulai Sekarang</button>    
+                <ul class="login" style="display: flex;">
+                    <li class="signUp"><a href="#">Sign Up</a></li>
+                    <span>|</span>
+                    <li class="signIn"><a href="#"><b>Sign In</b></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="heroBanner">
+            <div class="textBanner">
+                <h1>Raih Pengalamanmu Dengan Bergabung Di Program Kami</h1>
+                <p>Kelas <span>-</span> Komunitas <span>-</span> Kursus</p>
+                <button id="hero-btn" style="border-radius: 2px;">Mulai Sekarang</button>    
+            </div>
         </div>
     </section>
-    <!--Hero Banner-->
+    <!--Heading-->
 
     <!--Main Content-->
-    <section class="tentangKami">
-        <div class="container-tentangKami">
-            <div class="text-tentangKami">
-                <h3><span>Tentang Senikus</span></h3>
-                <p><span>Senikus adalah sebuah komunitas untuk sharing hal-hal terkait dunia seni, selain itu Senikus juga menghadirkan sebuah program kelas untuk anak-anak muda terutama Anak Sekolah SMA/SMK mempelajari seni yang sesuai dengan konteks dan era digital saat ini.
-                </span></p>
+    <section class="mainContent" id="mainContent">
+        <!--nav main-->
+        <nav class="mainNav" id="mainNav">
+            <ul>
+                <li>Program</li>
+                <li>Kontak Kami</li>
+            </ul>
+            <div class="menuSearch">
+                <input type="search" placeholder="Cari Kelas atau Kursus" value="">
             </div>
-            <img src="https://i.postimg.cc/qBZhhgFk/omar-lopez-1qfy-j-Dc-jo-unsplash.jpg" style="border-radius: 10px;" alt="tentangKami" width="45%">
-        </div>
-    </section>
+        </nav>
+        <!--nav main-->
 
-    <section class="program">
-        <hr>
-        <div class="programKelas">
-            <h1>Program Kelas Kami</h1>
-            <!--list card kelas-->
-            <div id="card-container"></div>
+        <!--introduction-->
+        <div class="tentangKami-container" id="containerTentangKami">
+            <div class="tentangKami">
+                <div class="text-tentangKami">
+                    <h3>Tentang <span>Senikus</span></h3>
+                    <p><span><b>Senikus</b></span> adalah sebuah komunitas untuk sharing hal-hal terkait dunia seni. <br><br> Kami juga menghadirkan sebuah program kelas untuk anak muda terutama <span><b>Anak Sekolah SMA/SMK</b></span> agar dapat belajar seni yang sesuai dengan konteks dan era digital saat ini.</p>
+                </div>
+                <img src="https://i.postimg.cc/qBZhhgFk/omar-lopez-1qfy-j-Dc-jo-unsplash.jpg" style="border-radius: 10px;" alt="tentangKami" width="45%">
+            </div>
+            
+            
+            <hr>
+
+
+            <div class="containerIntro">
+                <div class="textIntro">
+                    <h3>Program Kami</h3>
+                </div>
+                <div class="ourProgram-container">
+                    <div class="card-ourProgram">
+                        <div class="content-ourProgram">
+                            <h4>Program Kelas</h4>
+                            <button>Cek Detail</button>
+                        </div>
+                        <img src="https://i.postimg.cc/yd3gP6xL/kelli-tungay-2-LJ4rq-K2qf-U-unsplash.jpg" alt="kelas" width="100">
+                    </div>
+                    <div class="card-ourProgram">
+                        <div class="content-ourProgram">
+                            <h4>Kursus Di Senikus</h4>
+                            <button>Cek Detail</button>
+                        </div>
+                        <img src="https://i.postimg.cc/YS5qt62x/next-academy-Jy-Jw-O0-K5f-WM-unsplash.jpg" alt="kursus" width="100">
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--introduction-->
+
+        <!--Class&Course-->
+        <!-- <div class="kelas-container">
+            <div class="program-container">
+                <div class="programKelas">
+                    <h3><span>Program</span> Kelas Rekomendasi</h3>
+                    
+                    <div id="card-class-container"></div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="course-container">
+
+        </div> -->
+        <!--Class&Course-->
+
     </section>
    <!--
     <section class="footer">
