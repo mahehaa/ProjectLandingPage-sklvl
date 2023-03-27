@@ -7,8 +7,7 @@
 
 .headingContent {
     width: 100%;
-    height: 100%;
-    margin: 0;
+    height: 550px;
     padding: 0 0 25px 0;
     background-image: 
     linear-gradient(rgba(33, 33, 41, 0.9), 
@@ -19,20 +18,19 @@
 }
 
 .headNav {
-    position: fixed;
+    background-color: #212129;
+    position: sticky;
     top: 0;
-    height: 250px;
-    margin: 0 140px 0 140px;
     display: flex;
-    padding: 5px 10px 5px 10px;
+    margin: 0 0 0 0;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    border-radius: 10px;
 }
 
 .logo img {
     width: 220px;
+    padding-left: 140px;
 }
 
 .headNav .menu {
@@ -66,7 +64,7 @@
     list-style-type: none;
     display: inline-flex;
     align-items: center;
-    padding: 0;
+    padding-right: 140px;
     margin: 0;
 }
 
@@ -86,7 +84,7 @@
     list-style-type: none;
     display: inline-flex;
     align-items: center;
-    padding: 0;
+    padding-right: 140px;
     margin: 0;
 }
 
@@ -110,7 +108,6 @@
 .heroBanner {
     width: 100%;
     height: 500px;
-    margin: 40px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,17 +121,19 @@
 }
 
 .textBanner h1 {
+    padding-bottom: 25px;
     letter-spacing: 2px;
     font-weight: bolder;
     font-size: 40px;
 }
 
 .textBanner p {
+    padding-bottom: 20px;
     font-weight: lighter;
     text-align: center;
     font-size: 16px;
-    color: #cacaca;
-    letter-spacing: 5px;
+    color: #e47d23;
+    letter-spacing: 2px;
 }
 
 .textBanner #hero-btn {
@@ -143,41 +142,28 @@
     height: 50px;
     margin-top: 20px;
     border-color: #fafafa;
+    border-style: solid;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.textBanner #hero-btn:hover {
+    transition: background-color 0.2s ease-in-out;
+    color: #fffffe;
+    background-color: #212129;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-style: none;
+    cursor: pointer;
 }
 
 /* Main Content */
 
 .mainContent {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin: 50px 140px 0 140px;
     background-color: #fffffe;
 }
-
-.mainNav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mainNav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.mainNav ul li {
-    margin-right: 20px;
-}
-
-
-
-
 
 .tentangKami-container {
     background-color: #f9fafa;
@@ -210,18 +196,19 @@
     font-size: 32px;
     font-weight: bold;
     color: #e47d23;
+    text-decoration: underline;
 }
 
 .text-tentangKami p {
     width: 430px;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-weight: lighter;
     color: #cacaca;
 }
 
 .text-tentangKami p span{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     color: #e47d23;
 }
@@ -234,8 +221,9 @@
 
 .textIntro h3 {
     padding-bottom: 50px;
-    font-size: 40px;
+    font-size: 32px;
     color: #212129;
+    text-decoration: underline;
 }
 
 .ourProgram-container {
@@ -254,13 +242,36 @@
     margin: 0 25px 0 30px;
     border-radius: 10px;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.card-ourProgram h4 {
+    cursor: pointer;
 }
 
 .card-ourProgram img {
-    width: 200px;
+    width: 220px;
     height: 150px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.card-ourProgram:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #212129;
+    color: #fffffe;
+    filter: brightness(100%);
+}
+
+.card-ourProgram img:hover {
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
 /* .content-ourProgram {
     
