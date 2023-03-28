@@ -98,7 +98,7 @@
 }
 
 .login .signIn a {
-    color: #e77a18;
+    color: #eb8023;
 }
 
 .login span {
@@ -132,7 +132,7 @@
     font-weight: lighter;
     text-align: center;
     font-size: 16px;
-    color: #e47d23;
+    color: #eb8023;
     letter-spacing: 2px;
 }
 
@@ -170,6 +170,7 @@
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     padding: 40px;
+    
 }
 
 .tentangKami {
@@ -195,7 +196,7 @@
 .text-tentangKami h3 span{
     font-size: 32px;
     font-weight: bold;
-    color: #e47d23;
+    color: #eb8023;
     text-decoration: underline;
 }
 
@@ -208,25 +209,33 @@
 }
 
 .text-tentangKami p span{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-    color: #e47d23;
+    color: #eb8023;
 }
 
 .containerIntro {
+    background-color: #212129;
     width: auto;
     margin-top: 40px;
     padding: 40px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .textIntro h3 {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: left;
     font-size: 32px;
-    color: #212129;
-    text-decoration: underline;
+    color: #fffffe;
+}
+
+.textIntro h3 span {
+    color: #eb8023;
 }
 
 .ourProgram-container {
+    padding-top: 25px;
     display: flex;
     justify-content: center;
 }
@@ -242,12 +251,13 @@
     margin: 0 25px 0 30px;
     border-radius: 10px;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fffffe;
     cursor: pointer;
-    filter: brightness(50%);
 }
 
 .card-ourProgram h4 {
     cursor: pointer;
+    color: #212129;
 }
 
 .card-ourProgram img {
@@ -259,9 +269,8 @@
 
 .card-ourProgram:hover {
     transition: background-color 0.2s ease-in-out;
-    background-color: #212129;
-    color: #fffffe;
-    filter: brightness(100%);
+    background-color: #ebebeb;
+    color: #212129;
 }
 
 .card-ourProgram img:hover {
@@ -278,7 +287,13 @@
 } */
 
 
-/* .program-container {
+.kelas-container {
+    margin-top: 75px;
+    background-color: #212129;
+    border-radius: 10px;
+}
+
+.programKelas-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,17 +303,22 @@
 }
 
 .programKelas {
-    text-align: center;
+    text-align: left;
     display: block;
 }
 
 .programKelas h3{
-    font-size: 40px;
-    padding-bottom: 25px;
+    font-size: 32px;
+    padding-bottom: 20px;
 }
 
 .programKelas h3 span {
-    color: #e77a18; 
+    color: #e77a18;
+}
+
+.card-class-container {
+    overflow: hidden;
+    margin-top: 25px;
 }
 
 .cardClass {
@@ -314,6 +334,8 @@
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    filter: brightness(50%);
+    margin-bottom: 10px;
 }
 
 .cardClass img:hover {
@@ -321,28 +343,38 @@
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 1.5px 0 10px #fafafa    
+    filter: brightness(100%);
 }
 
-.cardClass .body-card {
-    text-align: center;
+.cardClass .body-card-class h4 {
+    text-align: left;
     color: #fafafa;
     padding-bottom: 10px;
 }
 
 .cardClass .body-card-class p {
+    text-align: left;
     color: #cacaca;
+    padding: 10px;
 }
 
-.cardClass .body-card-class a {
-    color: #cacaca;
-    text-decoration: none;
+.cardClass .body-card-class .btn-kelas {
+    color: #fffffe;
+    background-color: #e49c5e;
+    padding: 4px;
+    border: #cacaca;
+    border-radius: 4px;
+    width: 100%;
     font-size: 16px;
 }
 
-.cardClass .body-card-class a:hover {
-    color: #fafafa;
-    text-decoration: none;
-    font-size: 18px;
+.cardClass .body-card-class .btn-kelas:hover {
+    color: #fffffe;
     font-weight: bold;
-} */
+    background-color: #e47d23;
+    padding: 4px;
+    border: #cacaca;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
