@@ -7,18 +7,18 @@
 
 .headingContent {
     width: 100%;
-    height: 550px;
+    height: 100%;
     padding: 0 0 25px 0;
     background-image: 
-    linear-gradient(rgba(33, 33, 41, 0.9), 
-    rgba(33, 33, 41, 0.7)),
+    linear-gradient(rgba(15, 14, 23, 0.9), 
+    rgba(15, 14, 23, 0.5)),
     url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .headNav {
-    background-color: #212129;
+    background-color: #0f0e17;
     position: sticky;
     top: 0;
     display: flex;
@@ -52,7 +52,7 @@
 }
 
 .headNav .menu li a {
-    color: #cacaca;
+    color: #a7a9be;
     text-decoration: none;
     font-size: 18px;
     width: 120px;
@@ -69,7 +69,7 @@
 }
 
 .user li a {
-    color: #cacaca;
+    color: #a7a9be;
     font-size: 18px;
     width: 120px;
     padding: 0;
@@ -90,7 +90,7 @@
 
 .login li a {
     text-decoration: none;
-    color: #cacaca;
+    color: #a7a9be;
     font-size: 18px;
     width: 120px;
     padding: 0;
@@ -98,7 +98,7 @@
 }
 
 .login .signIn a {
-    color: #eb8023;
+    color: #ff8906;
 }
 
 .login span {
@@ -132,12 +132,12 @@
     font-weight: lighter;
     text-align: center;
     font-size: 16px;
-    color: #eb8023;
-    letter-spacing: 2px;
+    color: #ff8906;
+    letter-spacing: 5px;
 }
 
 .textBanner #hero-btn {
-    color: #fafafa;
+    color: #d2d4ec;
     width: 200px;
     height: 50px;
     margin-top: 20px;
@@ -150,7 +150,7 @@
 .textBanner #hero-btn:hover {
     transition: background-color 0.2s ease-in-out;
     color: #fffffe;
-    background-color: #212129;
+    background-color: #0f0e17;
     width: 200px;
     height: 50px;
     margin-top: 20px;
@@ -178,7 +178,7 @@
     align-items: center;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #212129;
+    background-color: #0f0e17;
     border-radius: 10px;
 }
 
@@ -196,7 +196,7 @@
 .text-tentangKami h3 span{
     font-size: 32px;
     font-weight: bold;
-    color: #eb8023;
+    color: #ff8906;
     text-decoration: underline;
 }
 
@@ -205,43 +205,40 @@
     font-size: 15px;
     letter-spacing: 1px;
     font-weight: lighter;
-    color: #cacaca;
+    color: #a7a9be;
 }
 
 .text-tentangKami p span{
     font-size: 16px;
     font-weight: bold;
-    color: #eb8023;
+    color: #ff8906;
 }
 
 .containerIntro {
-    background-color: #212129;
+    background-color: #0f0e17;
     width: auto;
-    margin-top: 40px;
-    padding: 40px;
+    margin-top: 100px;
+    padding: 20px 40px 40px 40px;
     border-radius: 10px;
     text-align: center;
 }
 
 .textIntro h3 {
-    padding-bottom: 20px;
     text-align: left;
     font-size: 32px;
     color: #fffffe;
 }
 
 .textIntro h3 span {
-    color: #eb8023;
+    color: #ff8906;
 }
 
 .ourProgram-container {
     padding-top: 25px;
     display: flex;
-    justify-content: center;
 }
 
 .card-ourProgram {
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,14 +247,13 @@
     padding: 20px;
     margin: 0 25px 0 30px;
     border-radius: 10px;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
     background-color: #fffffe;
     cursor: pointer;
 }
 
 .card-ourProgram h4 {
     cursor: pointer;
-    color: #212129;
+    color: #0f0e17;
 }
 
 .card-ourProgram img {
@@ -270,7 +266,7 @@
 .card-ourProgram:hover {
     transition: background-color 0.2s ease-in-out;
     background-color: #ebebeb;
-    color: #212129;
+    color: #0f0e17;
 }
 
 .card-ourProgram img:hover {
@@ -280,16 +276,19 @@
     cursor: pointer;
 }
 
+.content-ourProgram {
+    text-align: left;
+    margin: 10px;  
+}
 
-
-/* .content-ourProgram {
-    
-} */
+.content-ourProgram p {
+    font-size: 12px;  
+}
 
 
 .kelas-container {
-    margin-top: 75px;
-    background-color: #212129;
+    margin-top: 100px;
+    /* background-color: #0f0e17; */
     border-radius: 10px;
 }
 
@@ -297,7 +296,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
     color: #fafafa;
     border-radius: 0 0 10px 10px;
 }
@@ -308,12 +306,12 @@
 }
 
 .programKelas h3{
+    color: #0f0e17;
     font-size: 32px;
-    padding-bottom: 20px;
 }
 
 .programKelas h3 span {
-    color: #e77a18;
+    color: #ff8906;
 }
 
 .card-class-container {
@@ -325,8 +323,11 @@
     width: 200px;
     height: 300px;
     float: left;
-    margin: 0 14px;
+    margin: 0px 14px 14px 14px;
+    padding: 8px;
     border-radius: 10px;
+    background-color: #fffffe;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .cardClass img {
@@ -348,33 +349,112 @@
 
 .cardClass .body-card-class h4 {
     text-align: left;
-    color: #fafafa;
+    color: #0f0e17;
     padding-bottom: 10px;
 }
 
 .cardClass .body-card-class p {
     text-align: left;
-    color: #cacaca;
-    padding: 10px;
+    color: #848697;
+    padding: 10px 0 10px 0;
 }
 
 .cardClass .body-card-class .btn-kelas {
     color: #fffffe;
-    background-color: #e49c5e;
+    filter: brightness(75%);
+    background-color: #ff8906;
     padding: 4px;
-    border: #cacaca;
+    border: #a7a9be;
     border-radius: 4px;
     width: 100%;
+    height: 44px;
     font-size: 16px;
 }
 
 .cardClass .body-card-class .btn-kelas:hover {
     color: #fffffe;
+    filter: brightness(100%);
     font-weight: bold;
-    background-color: #e47d23;
+    background-color: #ff8906;
     padding: 4px;
-    border: #cacaca;
+    border: #a7a9be;
     border-radius: 4px;
     width: 100%;
     font-size: 16px;
+}
+
+/* Footer */
+.footerContent {
+    margin-top: 55px;
+    padding: 0 140px 35px 140px;
+    background-color: #0f0e17;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.logoFooter {
+    margin-top: 35px;
+    width: 220px;
+    color: #a7a9be;
+}
+
+.logoFooter a {
+    color: #a7a9be;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.logoFooter img{
+    width: 220px;
+}
+
+.kontenFooter {
+    margin-top: 50px;
+}
+
+.menuFooter li {
+    color: #fffffe;
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.menuFooter li a {
+    text-decoration: none;
+    color: #a7a9be;
+    font-size: 16px;
+}
+
+.menuFooter li a:hover {
+    text-decoration: none;
+    color: #fffffe;
+    font-size: 16px;
+}
+
+.iconSosmed {
+    width: 250px;
+    margin-top: 45px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: 25px;
+}
+
+.iconSosmed a {
+    color: #a7a9be;
+    text-decoration: none;
+}
+
+.iconSosmed a:hover {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.iconSosmed .address {
+    color: #a7a9be;
+    padding-top: 15px;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    text-align: left;
 }

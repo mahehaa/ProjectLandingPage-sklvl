@@ -45,7 +45,7 @@ function generateCardsClass(data) {
                   <h4><b>${item.namaKelas}</b></h4> 
                   <p>${item.kategori}</p>
                   <br>
-                  <button class="btn-kelas" id="btn-kelas">Cek Detail</button>
+                  <button class="btn-kelas" id="btn-kelas">Mulai Belajar</button>
                </div>          
          </div>
       `;
