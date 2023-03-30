@@ -235,7 +235,7 @@ form .formInput:-webkit-input-placeholder{
 
 form #status {
     margin-top: 12px;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 form label {
@@ -250,9 +250,9 @@ form label {
 }
 
 form button {
-    margin-top: 25px;
+    margin-top: 45px;
     width: 250px;
-    height: 30px;
+    height: 35px;
     color: #0f0e17;
     background-color: #a7a9be;
     border-radius: 5px;
@@ -261,9 +261,9 @@ form button {
 }
 
 form button:hover {
-    margin-top: 25px;
+    margin-top: 45px;
     width: 250px;
-    height: 30px;
+    height: 35px;
     color: #fffffe;
     background-color: #3f4049;
     border-radius: 5px;
