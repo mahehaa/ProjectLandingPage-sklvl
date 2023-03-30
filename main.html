@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    <title>Senikus</title>
     <link rel="icon" href="https://i.postimg.cc/W4fx6kFn/logo-color-removebg-preview.png">
+    <title>Senikus</title>
 </head>
 <body>
     <!--Heading-->
@@ -36,12 +36,26 @@
             </ul>
         </div>
     </nav>
+
     <section class="headingContent" id="headingContent">
         <div class="heroBanner">
             <div class="textBanner">
-                <h1>Raih Pengalamanmu Dengan Bergabung Di Program Kami</h1>
+                <h1>Raih Pengalaman Belajarmu Dengan Bergabung Di <span>Program Senikus</span></h1>
                 <p>Kelas <span>-</span> Komunitas <span>-</span> Kursus</p>
                 <button id="hero-btn" style="border-radius: 2px;">Mulai Sekarang</button>    
+            </div>
+            <div class="getStarted">
+                <h1>Get Started</h1>
+                <form>
+                    <input id="name" class="formInput" type="text" placeholder="Nama Lengkap"><br>
+                    <input id="city" class="formInput" type="text" placeholder="Kota"><br>
+                    <input id="email" class="formInput" type="email" placeholder="Email"><br>
+                    <input id="zip-code" class="formInput" type="number" placeholder="Kode Pos"><br>
+                    <input id="status" type="checkbox">
+                    <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label><br>
+                    <button id="submit-form" type="submit">Submit</button><br>
+                    <div id="warning"></div>
+                </form>
             </div>
         </div>
     </section>
@@ -95,8 +109,7 @@
             </div>
         </div>
     </section>
-   
-    <section class="footerContent">
+    <footer class="footerContent">
         <div class="logoFooter">
             <img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100">
             <p>@Senikus-2023</p>
@@ -118,10 +131,7 @@
                 <p>Jl. Yusuf, RT.6/RW.3, Sukabumi Utara, Kec. Kebon Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
             </div>
         </div>
-    </section>
-    <footer>
-        
-    </footer>
+    </footer>  
     <!--Script-->
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>

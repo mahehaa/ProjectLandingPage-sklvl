@@ -10,8 +10,8 @@
     height: 100%;
     padding: 0 0 25px 0;
     background-image: 
-    linear-gradient(rgba(15, 14, 23, 0.9), 
-    rgba(15, 14, 23, 0.5)),
+    linear-gradient(rgba(15, 14, 23, 0.8), 
+    rgba(15, 14, 23, 0.8)),
     url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,15 +125,18 @@
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: top;
+    padding-top: 15%;
 }
 
 .textBanner {
-    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: left;
     color: #fafafa;
     padding: 12px;
-    width: 50%;
+    width: 45%;
 }
 
 .textBanner h1 {
@@ -143,13 +146,20 @@
     font-size: 40px;
 }
 
+.textBanner h1 span {
+    color: #ff8906;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
 .textBanner p {
     padding-bottom: 20px;
     font-weight: lighter;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
-    color: #ff8906;
-    letter-spacing: 5px;
+    color: #d2d4ec;
 }
 
 .textBanner #hero-btn {
@@ -157,21 +167,108 @@
     width: 200px;
     height: 50px;
     margin-top: 20px;
-    border-color: #fafafa;
+    border-color: #0f0e17;
+    background-color: #0f0e17;
     border-style: solid;
-    background-color: transparent;
     cursor: pointer;
 }
 
 .textBanner #hero-btn:hover {
-    transition: background-color 0.2s ease-in-out;
-    color: #fffffe;
-    background-color: #0f0e17;
+    border-style: solid;
+    border-style: none;
+    cursor: pointer;
     width: 200px;
     height: 50px;
     margin-top: 20px;
-    border-style: none;
-    cursor: pointer;
+    color: #fffffe;
+    border-color: #fffffe;
+    background-color: #050505;
+}
+
+.getStarted {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    height: 420px;
+    margin-top: -65px;
+    margin-right: 100px;
+    border-radius: 20px;
+    background-color: rgba(15, 14, 23, 0.9);
+    
+}
+
+.getStarted h1 {
+    color: #fffffe;
+    padding-bottom: 20px;
+}
+
+.getStarted form {
+    display: block;
+    text-align: center;
+}
+
+form .formInput {
+    text-align: left;
+    margin: 10px 0 10px;
+    padding: 10px 0;
+    width: 250px;
+    background-color: transparent;
+    color: #fffffe;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #fffffe;
+    outline: none;
+}
+
+form .formInput:focus {
+    background-color: none;
+    border: none;
+    outline: none;
+    padding-left: 2px;
+}
+
+form .formInput:-webkit-input-placeholder{
+    background-color: none;
+    text-align: left;
+    color: #a7a9be;
+}
+
+form #status {
+    margin-top: 12px;
+    margin-left: 126px;
+}
+
+form label {
+    margin-top: 10px;
+    margin-right: 115px;
+    float: right;
+    text-align: left;
+    width: 250px;
+    letter-spacing: 0.1px;
+    color: #a7a9be;
+    font-size: 10px;
+}
+
+form button {
+    margin-top: 25px;
+    width: 250px;
+    height: 30px;
+    color: #0f0e17;
+    background-color: #a7a9be;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+form button:hover {
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    color: #fffffe;
+    background-color: #3f4049;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
 }
 
 /* Main Content */
@@ -410,7 +507,7 @@
 } */
 
 /* Footer */
-.footerContent {
+footer {
     margin-top: 55px;
     padding: 0 100px 35px 100px;
     background-color: #0f0e17;
