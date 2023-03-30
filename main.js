@@ -17,43 +17,23 @@ for (let i = 0; i < btns.length; i++) {
 let cardListClass = [
    {
       namaKelas : "Seni Rupa Kontemporer",
-      kategori : "seni rupa",
+      deskripsi : "Mengenal apa itu seni kontemporer",
       image : "https://i.postimg.cc/cHGCvdgh/steve-johnson-j-PT1h-VOhqb0-unsplash.jpg"
    },
    {
       namaKelas : "Seni Rupa Millenium",
-      kategori : "seni rupa",
+      deskripsi : "Generasi millenium perlu tahu nih apa sih seni rupa millenium itu",
       image : "https://i.postimg.cc/1zt4kWx0/fabrice-villard-Jrl-UQc-Zq-Oc-unsplash.jpg"
    },
    {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/ZKwSGJJg/simona-sergi-Ofj-Ouw-pr-Pg-unsplash.jpg"
+      namaKelas : "Belajar Membuat Cerpen",
+      deskripsi : "Belajar bikin cerpen anti ngebosenin",
+      image : "https://i.postimg.cc/nh1hKsPJ/Stock-Snap-HDWDWONFBI.jpg"
    },
    {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
-   },
-   {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
-   },
-   {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
-   },
-   {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
-   },
-   {
-      namaKelas : "Seni Rupa",
-      kategori : "kategori",
-      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
+      namaKelas : "Mengenal Pameran",
+      deskripsi : "Temen-temen harus tau apa itu Pameran Seni dan seberapa pentingnya",
+      image : "https://i.postimg.cc/cHdxvdmJ/jessica-pamp-JNTSoyb-bbw-unsplash.jpg"
    }
 ]
 
@@ -66,10 +46,10 @@ function generateCardsClass(data) {
             <img src="${item.image}" alt="seniRupa" style="width:100%">
                <div class="body-card-class">
                   <h4><b>${item.namaKelas}</b></h4> 
-                  <p>${item.kategori}</p>
+                  <p>${item.deskripsi}</p>
                   <br>
-                  <button class="btn-kelas" id="btn-kelas">Mulai Belajar</button>
-               </div>          
+               </div> 
+               <button class="btn-kelas" id="btn-kelas">Mulai Belajar</button>         
          </div>
       `;
    });

@@ -444,13 +444,13 @@ form button:hover {
 
 .cardClass {
     width: 200px;
-    height: 300px;
-    float: left;
+    height: 330px;
     margin: 0px 14px 50px 14px;
     padding: 8px;
     border-radius: 10px;
     background-color: #fffffe;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    float: left;
     cursor: pointer;
 }
 
@@ -470,9 +470,17 @@ form button:hover {
     filter: brightness(100%);
 } */
 
+.cardClass .body-card-class {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 120px;
+    padding: 0 5px 0 5px;
+}
+
 .cardClass .body-card-class h4 {
     text-align: left;
     color: #0f0e17;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -480,9 +488,12 @@ form button:hover {
     text-align: left;
     color: #848697;
     padding: 10px 0 10px 0;
+    font-size: 12px;
 }
 
-.cardClass .body-card-class .btn-kelas {
+.cardClass .btn-kelas {
+    position: static;
+    cursor: pointer;
     color: #fffffe;
     background-color: #ff8906;
     padding: 4px;
@@ -491,7 +502,6 @@ form button:hover {
     width: 100%;
     height: 44px;
     font-size: 16px;
-    cursor: pointer;
 }
 
 /* .cardClass .body-card-class .btn-kelas:hover {
