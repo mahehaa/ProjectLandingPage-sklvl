@@ -1,3 +1,4 @@
+// Active Menu
 let navbar = document.getElementsByClassName("menu");
 let btns = navbar[0].getElementsByClassName("btn");
 
@@ -5,12 +6,14 @@ for (let i = 0; i < btns.length; i++) {
    // console.log(btns[i])
    btns[i].addEventListener("click", function () {
       let current = document.getElementsByClassName("active")
-      // let data = current[0].className
+      // console.log(current[0].className)
       current[0].className = current[0].className.replace(" active", "")
       this.className += " active"
    });
 }
+// Active Menu
 
+// Generate Class Card
 let cardListClass = [
    {
       namaKelas : "Seni Rupa Kontemporer",
@@ -32,6 +35,26 @@ let cardListClass = [
       kategori : "kategori",
       image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
    },
+   {
+      namaKelas : "Seni Rupa",
+      kategori : "kategori",
+      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
+   },
+   {
+      namaKelas : "Seni Rupa",
+      kategori : "kategori",
+      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
+   },
+   {
+      namaKelas : "Seni Rupa",
+      kategori : "kategori",
+      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
+   },
+   {
+      namaKelas : "Seni Rupa",
+      kategori : "kategori",
+      image : "https://i.postimg.cc/KvHW7jGZ/alice-donovan-rouse-yu68f-UQDv-OI-unsplash.jpg"
+   }
 ]
 
 function generateCardsClass(data) {
@@ -55,3 +78,4 @@ function generateCardsClass(data) {
 
 let cardContainerClass = document.getElementById("card-class-container");
 cardContainerClass.innerHTML = generateCardsClass(cardListClass);
+// Generate Class Card
