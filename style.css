@@ -543,9 +543,18 @@ footer {
 .contact a {
     border-radius: 4px;
     text-decoration: none;
+    color: #fffffe;
+    font-weight: bold;
+    background-color: #ff8906;
+    padding: 15px 20px;
+}
+
+.contact a:hover {
+    border-radius: 4px;
+    text-decoration: none;
     color: #0f0e17;
     font-weight: bold;
-    background-color: #a7a9be;
+    background-color: #fffffe;
     padding: 15px 20px;
 }
 
