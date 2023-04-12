@@ -10,23 +10,22 @@
     height: 100%;
     padding: 0 0 25px 0;
     background-image: 
-    linear-gradient(rgba(15, 14, 23, 0.8), 
-    rgba(15, 14, 23, 0.8)),
+    linear-gradient(rgba(15, 14, 23, 0.9), 
+    rgba(15, 14, 23, 0.9)),
     url("https://i.postimg.cc/PJbjVr6v/josh-liu-Tjio9-Dgt-Ils-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .headNav {
-    background-color: #0f0e17;
-    position: fixed;
-    width: 220vh;
     top: 0;
+    background-color: #0f0e17;
     display: flex;
-    margin: 0 0 0 0;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .logo img {
@@ -62,13 +61,13 @@
 .isLogin .user {
     height: 20px;
     list-style-type: none;
-    display: inline-flex;
     align-items: center;
-    padding-right: 220px;
+    padding-right: 150px;
 }
 
 .user li a {
-    color: #a7a9be;
+    text-decoration: none;
+    color: #ff8906;
     font-size: 18px;
     width: 120px;
     padding: 0;
@@ -89,10 +88,10 @@
 
 .isLogin .login {
     list-style-type: none;
-    display: inline-flex;
     align-items: center;
     height: 20px;
-    padding-right: 200px;
+    padding-right: 150px;
+    margin-left: 68px;
 }
 
 .login li a {
@@ -123,7 +122,7 @@
 
 .heroBanner {
     width: 100%;
-    height: 500px;
+    height: 450px;
     display: flex;
     justify-content: left;
     align-items: top;
@@ -131,16 +130,18 @@
 }
 
 .textBanner {
+    text-align: left;
+    margin-top: -80px;
     margin-right: 100px;
     margin-left: 100px;
-    text-align: left;
     color: #fafafa;
-    padding: 12px;
-    width: 45%;
+    padding: 50px;
+    width: 100%;
+    height: 400px;
 }
 
 .textBanner h1 {
-    padding-bottom: 25px;
+    margin-bottom: 55px;
     letter-spacing: 2px;
     font-weight: bolder;
     font-size: 40px;
@@ -148,31 +149,38 @@
 
 .textBanner h1 span {
     color: #ff8906;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     letter-spacing: 2px;
     font-weight: bolder;
     font-size: 40px;
 }
 
 .textBanner p {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-weight: lighter;
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     color: #d2d4ec;
 }
 
-.textBanner #hero-btn {
-    border: none;
+.textBanner p span {
+    font-weight: lighter;
+    text-align: left;
+    font-size: 14px;
+    color: #fafafa;
+}
+
+.textBanner .hero-btn {
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #fafafa;
     color: #d2d4ec;
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
     background-color: #0f0e17;
     cursor: pointer;
+    padding: 15px 20px;
 }
 
-.textBanner #hero-btn:hover {
+.textBanner .hero-btn:hover {
     border: none;
     color: #fffffe;
     width: 200px;
@@ -185,14 +193,13 @@
 
 .getStarted {
     text-align: center;
-    width: 25%;
+    width: 65%;
     padding: 20px;
-    height: 420px;
-    margin-top: -65px;
+    height: max-content;
+    margin-top: -50px;
     margin-right: 100px;
     border-radius: 20px;
     background-color: rgba(15, 14, 23, 0.9);
-    
 }
 
 .getStarted h1 {
@@ -231,6 +238,11 @@ form .formInput:-webkit-input-placeholder{
     color: #a7a9be;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
 form #status {
     margin-top: 15px;
     margin-left: 35px;
@@ -248,7 +260,7 @@ form label {
 }
 
 form button {
-    margin-top: 45px;
+    margin-top: 20px;
     width: 250px;
     height: 35px;
     color: #0f0e17;
@@ -259,7 +271,7 @@ form button {
 }
 
 form button:hover {
-    margin-top: 45px;
+    margin-top: 20px;
     width: 250px;
     height: 35px;
     color: #fffffe;
@@ -267,6 +279,11 @@ form button:hover {
     border-radius: 5px;
     border: none;
     font-weight: bold;
+}
+
+#warning {
+    margin-top: 10px;
+    color: #e98686;
 }
 
 /* Main Content */
@@ -350,11 +367,15 @@ form button:hover {
     display: flex;
 }
 
+.ourProgram-container a {
+    text-decoration: none;
+}
+
 .card-ourProgram {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 500px;
     height: fit-content;
     padding: 20px;
     margin: 0 25px 0 30px;
@@ -363,27 +384,30 @@ form button:hover {
     cursor: pointer;
 }
 
-.card-ourProgram h4 {
-    cursor: pointer;
-    color: #0f0e17;
-}
-
-.card-ourProgram img {
-    width: 220px;
-    height: 150px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .card-ourProgram:hover {
     transition: background-color 0.2s ease-in-out;
     background-color: #ebebeb;
     color: #0f0e17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: fit-content;
+    transition: padding 0.1s ease-out, margin 0.5s ease-out;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.card-ourProgram img:hover {
-    width: 220px;
-    height: 150px;
+
+.card-ourProgram h4 {
+    cursor: pointer;
+    color: #0f0e17;
+    font-size: 24px;
+}
+
+.card-ourProgram img {
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -394,9 +418,13 @@ form button:hover {
 }
 
 .content-ourProgram p {
-    font-size: 12px;  
+    font-size: 14px;  
 }
 
+.content-ourProgram h5 {
+    font-size: 16px;  
+    color: #0f0e17;
+}
 
 .kelas-container {
     margin-top: 100px;
@@ -494,9 +522,38 @@ footer {
     margin-top: 55px;
     padding: 0 100px 35px 100px;
     background-color: #0f0e17;
+    height: auto;
+}
+
+.containerFooter {
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 15px;
+}
+
+.contact h2 {
+    font-size: 18px;
+    color: #fffffe;
+    margin-bottom: 30px;
+}
+
+.contact a {
+    border-radius: 4px;
+    text-decoration: none;
+    color: #0f0e17;
+    font-weight: bold;
+    background-color: #a7a9be;
+    padding: 15px 20px;
+}
+
+.content {
+    margin-top: 10vh;
     display: flex;
+    align-items: end;
     justify-content: space-between;
-    align-items: top;
 }
 
 .logoFooter {
@@ -524,6 +581,10 @@ footer {
     color: #fffffe;
     list-style: none;
     padding-bottom: 30px;
+}
+
+.menuFooter li:last-child {
+    padding-bottom: 0px;
 }
 
 .menuFooter li a {

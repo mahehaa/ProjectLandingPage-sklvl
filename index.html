@@ -1,139 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    <link rel="icon" href="https://i.postimg.cc/W4fx6kFn/logo-color-removebg-preview.png">
-    <title>Senikus</title>
-</head>
-<body>
-    <!--Heading-->
-    <nav class="headNav" id="headNav">
-        <div class="logo">
-            <img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100">
-        </div>
-        <ul class="menu">
-            <li><a href="#" class="btn active">Home</a></li>
-            <li><a href="#programContent" class="btn">Program</a></li>
-            <li><a href="#mainContent" class="btn">Tentang Kami</a></li>
-            <li><a href="#contact" class="btn">Kontak</a></li>
-        </ul>    
-        
-        <div class="isLogin">
-            <ul class="user" style="display: none;">
-                <span>|</span>
-                <li class="userName"><a href="#">Mahesa</a></li>
-                <li class="userAvatar"><a href="#"><img src="https://i.postimg.cc/bwcWHQHw/profile.png" width="50"></a></li>
-            </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
+		<link rel="icon" href="https://i.postimg.cc/W4fx6kFn/logo-color-removebg-preview.png" />
+		<title>Senikus</title>
+	</head>
+	<body>
+		<!--Heading-->
+		<nav class="headNav" id="headNav">
+			<div class="logo">
+				<img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100" />
+			</div>
+			<ul class="menu">
+				<li><a href="#" class="btn active">Home</a></li>
+				<li><a href="#sectionProgram" class="btn">Program</a></li>
+				<li><a href="#sectionTentangKami" class="btn">Tentang Kami</a></li>
+				<li><a href="#footer" class="btn">Kontak</a></li>
+			</ul>
 
-            <ul class="login" style="display: flex;">
-                <li class="signUp"><a href="#">Sign Up</a></li>
-                <span>|</span>
-                <li class="signIn"><a href="#"><b>Sign In</b></a></li>
-            </ul>
-        </div>
-    </nav>
+			<div class="isLogin">
+				<ul id="isLogin" class="user" style="display: none">
+					<span>|</span>
+					<li class="userName"><a href="#">Mahesa</a></li>
+					<li class="userAvatar"
+						><a href="#"><img src="https://i.postimg.cc/bwcWHQHw/profile.png" width="50" /></a
+					></li>
+				</ul>
 
-    <section class="headingContent" id="headingContent">
-        <div class="heroBanner">
-            <div class="textBanner">
-                <h1>Raih Pengalaman Belajarmu Dengan Bergabung Di <span>Program Senikus</span></h1>
-                <p>Kelas <span>-</span> Komunitas <span>-</span> Kursus</p>
-                <button id="hero-btn" style="border-radius: 2px;">Mulai Sekarang</button>    
-            </div>
-            <div class="getStarted">
-                <h1>Gabung Sekarang</h1>
-                <form autocomplete="off">
-                    <input id="name" class="formInput" type="text" placeholder="Nama Lengkap"><br>
-                    <input id="city" class="formInput" type="text" placeholder="Kota"><br>
-                    <input id="email" class="formInput" type="email" placeholder="Email"><br>
-                    <input id="zip-code" class="formInput" type="number" placeholder="Kode Pos"><br>
-                    <input id="status" type="checkbox">
-                    <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label><br>
-                    <button id="submit-form" type="submit">Submit</button><br>
-                    <div id="warning"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!--Heading-->
+				<ul id="login" class="login" style="display: flex">
+					<span>|</span>
+					<li class="signIn"
+						><a href="https://skilvul.com/signin?return_url=/courses"><b>Sign In</b></a></li
+					>
+				</ul>
+			</div>
+		</nav>
 
-    <!--Main Content-->
-    <section class="mainContent" id="mainContent">
-        <!--introduction-->
-        <div class="tentangKami-container" id="containerTentangKami">
-            <div class="tentangKami" id="tentangKami">
-                <div class="text-tentangKami">
-                    <h3>Tentang <span>SeniKus</span></h3>
-                    <p><span><b>Senikus</b></span> adalah sebuah komunitas untuk sharing hal-hal terkait dunia seni. <br><br> Kami juga menghadirkan sebuah program kelas untuk anak muda terutama <span><b>Anak Sekolah SMA/SMK</b></span> agar dapat belajar seni yang sesuai dengan konteks dan era saat ini.</p>
-                </div>
-                <img src="https://i.postimg.cc/qBZhhgFk/omar-lopez-1qfy-j-Dc-jo-unsplash.jpg" style="border-radius: 10px;" alt="tentangKami" width="45%">
-            </div>
+		<section class="headingContent" id="headingContent">
+			<div class="heroBanner">
+				<div class="textBanner">
+					<h1>Raih Pengalaman Belajarmu Dengan Bergabung Di <span>Senikus</span></h1>
+					<p
+						>Senikus menghadirkan sebuah program kelas untuk para pelajar terutama anak sekolah SMA/SMK dapat belajar mengenai seni secara <span><strong>GRATIS</strong></span
+						><br /><br />
+						untuk teman-teman yang belum bergabung di Senikus, kalian bisa bergabung dengan mengisi form <span><strong>Gabung Sekarang</strong></span
+						><br /><br />
+						mulai belajar dengan klik tombol dibawah ini.</p
+					><br>
+					<a class="hero-btn" href="https://skilvul.com/courses" style="border-radius: 2px">Mulai Sekarang</a>
+				</div>
+				<div class="getStarted" id="containerForm">
+					<h1>Gabung Sekarang</h1>
+					<form id="submit-form" autocomplete="off">
+						<input id="name" class="formInput" type="text" placeholder="Nama Lengkap" /><br />
+						<input id="city" class="formInput" type="text" placeholder="Kota" /><br />
+						<input id="email" class="formInput" type="email" placeholder="Email" /><br />
+						<input id="zip-code" class="formInput" type="number" placeholder="Kode Pos" /><br />
+						<input id="status" type="checkbox" />
+						<label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label><br />
+						<div id="warning"></div>
+						<button type="submit">Submit</button><br />
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--Heading-->
+		<span id="sectionTentangKami"></span>
+		<!--Main Content-->
+		<section class="mainContent" id="mainContent">
+			<!--introduction-->
+			<div class="tentangKami-container" id="containerTentangKami">
+				<div class="tentangKami" id="tentangKami">
+					<div class="text-tentangKami">
+						<h3>Tentang <span>SeniKus</span></h3>
+						<p
+							><span><b>Senikus</b></span> adalah sebuah komunitas untuk sharing hal-hal terkait dunia seni. <br /><br />
+							Kami juga menghadirkan sebuah program kelas untuk anak muda terutama <span><b>Anak Sekolah SMA/SMK</b></span> agar dapat belajar seni yang sesuai dengan konteks dan era saat ini.</p
+						>
+					</div>
+					<img src="https://i.postimg.cc/qBZhhgFk/omar-lopez-1qfy-j-Dc-jo-unsplash.jpg" style="border-radius: 10px" alt="tentangKami" width="45%" />
+				</div>
+				<span id="sectionProgram"></span>
+				<div class="containerIntro" id="programContent">
+					<div class="textIntro">
+						<h3><span>Program</span> Kami</h3> </div
+					><br />
+					<div class="ourProgram-container">
+						<a href="" class="card-ourProgram">
+							<div>
+								<div class="content-ourProgram">
+									<h4>Program Kelas</h4><br />
+									<p style="color: #8789a1">Kelas GRATIS untuk anak SMA/SMK</p><br />
+									<h5 style="color: #6a6b7e">Gabung Sekarang</h5>
+								</div>
+								<img src="https://i.postimg.cc/hvbcsx1S/nam-hoang-RHNi-Ar-Bkuk-E-unsplash.jpg" alt="kelas" width="100" />
+							</div>
+						</a>
 
-            <div class="containerIntro" id="programContent">
-                <div class="textIntro">
-                    <h3><span>Program</span> Kami</h3>
-                </div><br>
-                <div class="ourProgram-container">
-                    <div class="card-ourProgram">
-                        <div class="content-ourProgram">
-                            <h4>Program Kelas</h4><br>
-                            <p style="color: #8789a1;">Kelas GRATIS untuk anak SMA/SMK</p><br>
-                            <h5 style="color: #6a6b7e;">Gabung Sekarang</h5>
-                        </div>
-                        <img src="https://i.postimg.cc/hvbcsx1S/nam-hoang-RHNi-Ar-Bkuk-E-unsplash.jpg" alt="kelas" width="100">
-                    </div>
-                    <div class="card-ourProgram">
-                        <div class="content-ourProgram">
-                            <h4>Kursus Keahlian</h4><br>
-                            <p style="color: #8789a1;">Latih dan Gali Potensimu bersama Senikus</p><br>
-                            <h5 style="color: #6a6b7e;">Gabung Pelatihan</h5>
-                        </div>
-                        <img src="https://i.postimg.cc/YS5qt62x/next-academy-Jy-Jw-O0-K5f-WM-unsplash.jpg" alt="kursus" width="100">
-                    </div>
-                </div>
-            </div>
-            
-            <!--Class&Course-->
-            <div class="kelas-container">
-                <div class="programKelas-container">
-                    <div class="programKelas">
-                        <h3><span>Program</span> Kelas Senikus</h3><br>
-                        <div class="card-class-container" id="card-class-container"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footerContent" id="contact">
-        <div class="logoFooter">
-            <img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100">
-            <p>@Senikus-2023</p>
-        </div>
-        <div class="kontenFooter">
-            <ul class="menuFooter">
-                <li><strong>Program Senikus</strong></li>
-                <li><a href="#">Kelas</a></li>
-                <li><a href="#">Komunitas</a></li>
-                <li><a href="#">Kontak Kami</a></li>
-            </ul>
-        </div>
-        <div class="iconSosmed">
-            <a href="https://instagram.com/masehnr/"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
-            <a href="https://wa.me/6285719874243"><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
-            <a href="https://t.me/mahemeh0_0"><iconify-icon icon="la:telegram-plane"></iconify-icon></a>
-            <a href="https://github.com/mahemeh"><iconify-icon icon="mdi:github"></iconify-icon></a>
-            <div class="address">
-                <p>Jl. Yusuf, RT.6/RW.3, Sukabumi Utara, Kec. Kebon Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
-            </div>
-        </div>
-    </footer>  
-    <!--Script-->
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    <!--Script-->
-</body>
+						<a href="" class="card-ourProgram">
+							<div>
+								<div class="content-ourProgram">
+									<h4>Kursus Keahlian</h4><br />
+									<p style="color: #8789a1">Latih dan Gali Potensimu bersama Senikus</p><br />
+									<h5 style="color: #6a6b7e">Gabung Pelatihan</h5>
+								</div>
+								<img src="https://i.postimg.cc/YS5qt62x/next-academy-Jy-Jw-O0-K5f-WM-unsplash.jpg" alt="kursus" width="100" />
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!--Class&Course-->
+                <span id="sectionKelas"></span>
+				<div class="kelas-container">
+					<div class="programKelas-container">
+						<div class="programKelas">
+							<h3><span>Program</span> Kelas Senikus</h3><br />
+							<div class="card-class-container" id="card-class-container"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<span id="footer"></span>
+
+		<footer class="footerContent" id="contact">
+			<div class="containerFooter">
+				<div class="iconSosmed">
+					<a href="https://instagram.com/masehnr/"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+					<a href="https://wa.me/6285719874243"><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
+					<a href="https://t.me/mahemeh0_0"><iconify-icon icon="la:telegram-plane"></iconify-icon></a>
+					<a href="https://github.com/mahemeh"><iconify-icon icon="mdi:github"></iconify-icon></a>
+					<div class="address">
+						<p>Jl. Yusuf, RT.6/RW.3, Sukabumi Utara, Kec. Kebon Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
+					</div>
+				</div>
+				<div class="content">
+					<div class="kontenFooter">
+						<ul class="menuFooter">
+							<li><strong>Program Senikus</strong></li>
+							<li><a href="#sectionKelas">Kelas</a></li>
+							<li><a href="#sectionTentangKami">Komunitas</a></li>
+							<li><a href="#footer">Kontak Kami</a></li>
+						</ul>
+					</div>
+					<div class="logoFooter">
+						<img src="https://i.postimg.cc/gkxTKJqc/logos.webp" width="100" />
+						<p>@Senikus-2023</p>
+					</div>
+					<div class="contact">
+						<a href="">Hubungi Kami</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--Script-->
+		<script src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+		<!--Script-->
+	</body>
 </html>
